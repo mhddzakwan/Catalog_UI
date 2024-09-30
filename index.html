@@ -13,13 +13,13 @@
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#!">CiptaBot</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#beranda">Beranda</a></li>
                         <li class="nav-item"><a class="nav-link" href="#katalog">Katalog</a></li>
                     </ul>
                     <form class="d-flex">
@@ -33,7 +33,7 @@
             </div>
         </nav>
         <!-- Header-->
-        <header style="background-color: #F54748;;" class="py-5">
+        <header id="beranda" style="background-color: #F54748;;" class="py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder">Toko CiptaBot</h1>
@@ -41,14 +41,71 @@
                 </div>
             </div>
         </header>
+
+        <section class="py-5">
+           <div class="container px-4 px-lg-5 mt-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div style=" bottom: -50px;" class="carousel-indicators">
+                    <button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                <div class="carousel-inner">
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 text-center">
+                                <img class="mb-5" width="100px" src="https://raw.githubusercontent.com/MuhammadDzakwanAttaqiy-231401055/Catalog_UI/refs/heads/main/img/product.png" alt="Produk Berkualitas">
+                                <h3>Produk Berkualitas</h3>
+                                <p>Kami menyediakan berbagai macam mikrokontroler dan sensor berkualitas tinggi untuk mendukung proyek IoT, robotika, dan otomasi Anda.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 text-center">
+                                <img class="mb-5" width="100px" src="https://raw.githubusercontent.com/MuhammadDzakwanAttaqiy-231401055/Catalog_UI/refs/heads/main/img/service.png" alt="Layanan Terpercaya">
+                                <h3>Layanan Terpercaya</h3>
+                                <p>Siap membantu Anda dalam memilih produk yang sesuai dengan kebutuhan proyek Anda, serta memberikan dukungan teknis yang diperlukan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third Slide -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-4 text-center">
+                                <img class="mb-5" width="100px" src="https://raw.githubusercontent.com/MuhammadDzakwanAttaqiy-231401055/Catalog_UI/refs/heads/main/img/education.png" alt="Komunitas dan Edukasi">
+                                <h3>Komunitas dan Edukasi</h3>
+                                <p>Kami tidak hanya menjual produk, tetapi juga berkomitmen untuk mendukung komunitas teknologi dengan menyediakan tutorial dan panduan penggunaan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <img width="40px" src="https://raw.githubusercontent.com/MuhammadDzakwanAttaqiy-231401055/Catalog_UI/refs/heads/main/img/arrow-left.png" alt="">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <img width="40px" src="https://raw.githubusercontent.com/MuhammadDzakwanAttaqiy-231401055/Catalog_UI/refs/heads/main/img/arrow-right.png" alt="">
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+           </div>
+        </section>
+
         <!-- Section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                        <div id="katalog" class="card h-100 shadow-sm">
+                <h1 class="text-center pb-4">Produk</h2>
+                <div id="katalog" class="row justify-content-center">
+                    <div class="col-md-3 mb-5">
+                        <div  class="card h-100 shadow-sm">
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://raw.githubusercontent.com/MuhammadDzakwanAttaqiy-231401055/Catalog_UI/refs/heads/main/img/Hcsr04.jpg" alt="..." />
+                            <img class="card-img-top" src="img/Hcsr04.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -69,12 +126,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                    <div class="col-md-3 mb-5">
                         <div class="card h-100 shadow-sm">
                             <!-- Sale badge-->
                             <div class="badge text-white position-absolute" style="top: 0.5rem; right: 0.5rem; background-color: #F54748;">Promo</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://raw.githubusercontent.com/MuhammadDzakwanAttaqiy-231401055/Catalog_UI/refs/heads/main/img/arduino.jpeg" alt="..." />
+                            <img class="card-img-top" src="img/arduino.jpeg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -99,12 +156,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                    <div class="col-md-3 mb-5">
                         <div class="card h-100 shadow-sm">
                             <!-- Sale badge-->
                             <div class="badge text-white position-absolute" style="top: 0.5rem; right: 0.5rem; background-color: #F54748;">Promo</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://raw.githubusercontent.com/MuhammadDzakwanAttaqiy-231401055/Catalog_UI/refs/heads/main/img/esp8266.jpeg" alt="..." />
+                            <img class="card-img-top" src="img/esp8266.jpeg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4 ">
                                 <div class="text-center">
@@ -127,10 +184,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                    <div class="col-md-3 mb-5">
                         <div class="card h-100 shadow-sm">
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://raw.githubusercontent.com/MuhammadDzakwanAttaqiy-231401055/Catalog_UI/refs/heads/main/img/wemos.jpeg" alt="..." />
+                            <img class="card-img-top" src="img/wemos.jpeg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -148,16 +205,16 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Selengkapnya</a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                    <div class="col-md-3 mb-5">
                         <div class="card h-100 shadow-sm">
                             <!-- Sale badge-->
                             <div class="badge text-white position-absolute" style="top: 0.5rem; right: 0.5rem; background-color: #F54748;">Promo</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://raw.githubusercontent.com/MuhammadDzakwanAttaqiy-231401055/Catalog_UI/refs/heads/main/img/servo.jpeg" alt="..." />
+                            <img class="card-img-top" src="img//servo.jpeg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
@@ -179,15 +236,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-5">
+                    <div class="col-md-3 mb-5">
                         <div class="card h-100 shadow-sm">
                             <!-- Product image-->
-                            <img class="card-img-top" src="https://raw.githubusercontent.com/MuhammadDzakwanAttaqiy-231401055/Catalog_UI/refs/heads/main/img/lcd.jpg" alt="..." />
+                            <img class="card-img-top" src="img/lcd.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
+                                    <h5 class="fw-bolder">LCD 16x2</h5>
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
@@ -199,7 +256,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Selengkapnya</a></div>
                             </div>
                         </div>
                     </div>
